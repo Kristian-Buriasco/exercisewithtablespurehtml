@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
-  <script src="script.js"></script>
-
- <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="dark" defer></script> 
-</body>
-
+<html lang="en">
+  <head>
+    <!-- Charset UTF-8 Used to be able to put emojis and not use images where possible --->
+    <meta charset="UTF-8" />
+    <!-- ViewPort used to get responsive behavior (meta argument introduced with HTML5)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- X-UA-Compatible used to, as the name says, say it's compatible the version said in content attribute-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise with tables</title>
+  </head>
+  <body>
+    <table align="center" border="1">
+      <tr>
+        <th rowspan="5">Fields</th>
+        <th colspan="2">Field 1</th>
+        <th>Field 2</th>
+        <th>Field 3</th>
+      </tr>
+      <tr align="right">
+        <td>Value aaa</td>
+        <td>Photo aaa</td>
+        <td>Photo 1</td>
+        <td>House 1</td>
+      </tr>
+      <tr align="right">
+        <td>Value bbb</td>
+        <td>Photo bbb</td>
+        <td>Photo 2</td>
+        <td>House 2</td>
+      </tr>
+      <tr align="right">
+        <td>Value ccc</td>
+        <td>Photo ccc</td>
+        <td>Photo 3</td>
+        <td>House 3</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <ol type="1">
+            <li>
+              <a href="https://Google.com">Go to google</a>
+            </li>
+            <li>
+              <a href="https://amazon.com">Go to Amazon</a>
+            </li>
+            <li>Vallauri</li>
+            <ol type="a">
+              <li>
+                <a href="http://www.vallauri.edu">Go to Vallauri</a>
+              </li>
+              <ol type="a" start="2">
+                <li>
+                  <a href="https://orario.vallauri.edu">Go to Timetables</a>
+                </li>
+              </ol>
+            </ol>
+            <ol type="a" start="3">
+              <li>
+                <a href="http://www.vallauri.edu/public/ita/pagina.asp?pagina=registro_elettronico" >Go to academic records site</a
+                >
+              </li>
+            </ol>
+          </ol>
+        </td>
+        <td colspan="2">
+          <img
+            src="599.jfif"
+            alt="Cat error 599"
+            usemap="#mapimgcaterror599"
+            height="375"
+          />
+          <map name="mapimgcaterror599">
+            <area shape="rect" coords="0,0,300,300" href="https://google.com" />
+            <area
+              shape="rect"
+              coords="10,10,500,750"
+              href="https://amazon.com"
+            />
+          </map>
+        </td>
+      </tr>
+    </table>
+    <hr size="20" />
+    <div>
+      <h3>
+        This is a &lt div &gt tag
+      </h3>
+    </div>
+    <hr width="75%" allign="center" color="red" size="15" />
+    <h4>
+      <i>This is unordered list (ITALIC font))</i>
+    </h4>
+    <ul>
+      <li>Rossi Valentino</li>
+      <li>Gianbattista Sasia</li>
+      <li>Enrico Gambetta</li>
+      <li>Ciccio Gamer</li>
+      <li>Another Name</li>
+    </ul>
+    <u>nezzled list (underlined)</u>
+    <dl>
+      <dt>Authors:</dt>
+      <dd>Gianbattista Sasia</dd>
+      <dd>Enrico Gambetta</dd>
+      <dt>title:</dt>
+      <dd>Html technical tries</dd>
+    </dl>
+    <a href="#">Go back to the start</a>
+  </body>
 </html>
