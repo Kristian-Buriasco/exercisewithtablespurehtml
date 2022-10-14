@@ -1,111 +1,152 @@
+https://Prova1.kristianburiasc.repl.co
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Charset UTF-8 Used to be able to put emojis and not use images where possible --->
-    <meta charset="UTF-8" />
-    <!-- ViewPort used to get responsive behavior (meta argument introduced with HTML5)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- X-UA-Compatible used to, as the name says, say it's compatible the version said in content attribute-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Exercise with tables</title>
-  </head>
-  <body>
-    <table align="center" border="1">
-      <tr>
-        <th rowspan="5">Fields</th>
-        <th colspan="2">Field 1</th>
-        <th>Field 2</th>
-        <th>Field 3</th>
-      </tr>
-      <tr align="right">
-        <td>Value aaa</td>
-        <td>Photo aaa</td>
-        <td>Photo 1</td>
-        <td>House 1</td>
-      </tr>
-      <tr align="right">
-        <td>Value bbb</td>
-        <td>Photo bbb</td>
-        <td>Photo 2</td>
-        <td>House 2</td>
-      </tr>
-      <tr align="right">
-        <td>Value ccc</td>
-        <td>Photo ccc</td>
-        <td>Photo 3</td>
-        <td>House 3</td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <ol type="1">
+
+<head>
+  <!-- 
+  Timer for debug page it refreshes every 5 sec
+   <meta http-equiv="refresh" content="2" />
+  -->
+
+  <!--
+  Charset UTF-8 Used to be able to put emojis and not use images where possible 
+  -->
+  <meta charset="UTF-8" />
+  <!-- 
+  ViewPort used to get responsive behavior (meta argument introduced with HTML5)
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 
+  X-UA-Compatible used to, as the name says, say it's compatible the version said in content attribute\
+  -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Exercise with tables</title>
+</head>
+
+<body>
+  <!-- 
+  Table containing made up fields that can be modified afterwards using html5 attributes that allow not to use a css file and can modify the look of the particular table/cell like border size and alignment
+  -->
+  <table align="center" border="10">
+    <tr>
+      <!-- 
+      RowSpan and Colspan used to combine multiple cells as the words say rowspan indicates for how many rows does the heading(This time its used for a heading cell but it can also be used for table data cells) spans in height and colspan for how many columns it spans in width 
+      -->
+      <th rowspan="5">Fields</th>
+      <th colspan="2">Field 1</th>
+      <th>Field 2</th>
+      <th>Field 3</th>
+    </tr>
+    <tr align="right">
+      <td>Value aaa</td>
+      <td>Photo aaa</td>
+      <td>Photo 1</td>
+      <td>House 1</td>
+    </tr>
+    <tr align="right">
+      <td>Value bbb</td>
+      <td>Photo bbb</td>
+      <td>Photo 2</td>
+      <td>House 2</td>
+    </tr>
+    <tr align="right">
+      <td>Value ccc</td>
+      <td>Photo ccc</td>
+      <td>Photo 3</td>
+      <td>House 3</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <!-- 
+          Order List Type 1 which indicates that the list uses numbers
+          -->
+        <ol type="1">
+          <li>
+            <a href="https://Google.com">Go to google</a>
+          </li>
+          <li>
+            <a href="https://amazon.com">Go to Amazon</a>
+          </li>
+          <li>Vallauri</li>
+          <!-- 
+          Order List Type a which indicates that the list uses lowercase letters can also use A that indicates uppercase letters
+          -->
+          <ol type="a">
             <li>
-              <a href="https://Google.com">Go to google</a>
+              <a href="http://www.vallauri.edu">Go to Vallauri</a>
             </li>
-            <li>
-              <a href="https://amazon.com">Go to Amazon</a>
-            </li>
-            <li>Vallauri</li>
-            <ol type="a">
+            <!-- 
+              The attribute start lets the table know from to start ordering things in this case it indicates to start from the letter b
+              -->
+            <ol type="a" start="2">
               <li>
-                <a href="http://www.vallauri.edu">Go to Vallauri</a>
-              </li>
-              <ol type="a" start="2">
-                <li>
-                  <a href="https://orario.vallauri.edu">Go to Timetables</a>
-                </li>
-              </ol>
-            </ol>
-            <ol type="a" start="3">
-              <li>
-                <a href="http://www.vallauri.edu/public/ita/pagina.asp?pagina=registro_elettronico" >Go to academic records site</a
-                >
+                <a href="https://orario.vallauri.edu">Go to Timetables</a>
               </li>
             </ol>
           </ol>
-        </td>
-        <td colspan="2">
-          <img
-            src="599.jfif"
-            alt="Cat error 599"
-            usemap="#mapimgcaterror599"
-            height="375"
-          />
-          <map name="mapimgcaterror599">
-            <area shape="rect" coords="0,0,300,300" href="https://google.com" />
-            <area
-              shape="rect"
-              coords="10,10,500,750"
-              href="https://amazon.com"
-            />
-          </map>
-        </td>
-      </tr>
-    </table>
-    <hr size="20" />
-    <div>
-      <h3>
-        This is a &lt div &gt tag
-      </h3>
-    </div>
-    <hr width="75%" allign="center" color="red" size="15" />
-    <h4>
-      <i>This is unordered list (ITALIC font))</i>
-    </h4>
-    <ul>
-      <li>Rossi Valentino</li>
-      <li>Gianbattista Sasia</li>
-      <li>Enrico Gambetta</li>
-      <li>Ciccio Gamer</li>
-      <li>Another Name</li>
-    </ul>
-    <u>nezzled list (underlined)</u>
-    <dl>
-      <dt>Authors:</dt>
-      <dd>Gianbattista Sasia</dd>
-      <dd>Enrico Gambetta</dd>
-      <dt>title:</dt>
-      <dd>Html technical tries</dd>
-    </dl>
-    <a href="#">Go back to the start</a>
-  </body>
+          <ol type="a" start="3">
+            <li>
+              <a href="http://www.vallauri.edu/public/ita/pagina.asp?pagina=registro_elettronico">Go to academic records
+                site</a>
+            </li>
+          </ol>
+        </ol>
+      </td>
+      <td colspan="2">
+        <!--
+          This image uses the tag Map to let us use different parts of an image for different links
+          -->
+        <img src="599.jfif" alt="Cat error 599" usemap="#mapimgcaterror599" height="375" />
+        <map name="mapimgcaterror599">
+          <area shape="rect" coords="0,0,300,750" href="https://google.com" />
+          <area shape="rect" coords="300,0,750,750" href="https://amazon.com" />
+        </map>
+      </td>
+    </tr>
+  </table>
+  <hr size="20" />
+  <!--
+    This div tag is used as a container for things
+    -->
+  <div>
+    <!--
+    In this paragraph we use special combinations that lets the browser know what to display, if we used instead <> the browser could confuse them for tags
+    -->
+    <h>
+      This is a <b>&ltdiv&gt</b> tag
+      </p>
+  </div>
+  <hr width="75%" allign="center" color="red" size="15" />
+  <p>
+    <!--
+    In the next 2 paragraphs we use tags that again don't need the css sheet to use different style of text 
+    -->
+    <i>This is unordered list (ITALIC font))</i>
+  </p>
+  <ul>
+    <li>Rossi Valentino</li>
+    <li>Gianbattista Sasia</li>
+    <li>Enrico Gambetta</li>
+    <li>Ciccio Gamer</li>
+    <li>Another Name</li>
+  </ul>
+  <p>
+    <u>Nezzled list (underlined)</u>
+  </p>
+  <!--
+    In this list we use the description list tag (DL) that can make specific description details be moved under and a little bit to the right of a description term(Title)
+    -->
+  <dl>
+    <dt>Authors:</dt>
+    <dd>Gianbattista Sasia</dd>
+    <dd>Enrico Gambetta</dd>
+    <dt>Title:</dt>
+    <dd>Html technical tries</dd>
+  </dl>
+  <!--
+    This a tag with href equal to # gets the user page back up to the top 
+  -->
+  <a href="#">GO BACK TO THE START</a>
+</body>
+
 </html>
